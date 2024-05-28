@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Tugas7';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -144,8 +146,14 @@
   
   
   
+    
+    
+      
+    
+    
+    <img src="_static/foto.webp" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/foto.webp" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
   
-    <p class="title logo__title">My sample book</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -375,7 +383,8 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">Pengertian :</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#secara-umum-pemetaan-adalah-transformasi-linier-jika">Secara umum pemetaan adalah transformasi Linier jika</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definsi">Definsi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi">Refleksi</a></li>
 </ul>
             </nav>
         </div>
@@ -398,8 +407,172 @@ document.write(`
 <li><p>garis lurus ditetapkan sebagai lurus</p></li>
 </ul>
 </section>
-<section id="secara-umum-pemetaan-adalah-transformasi-linier-jika">
-<h2>Secara umum pemetaan adalah transformasi Linier jika<a class="headerlink" href="#secara-umum-pemetaan-adalah-transformasi-linier-jika" title="Link to this heading">#</a></h2>
+<section id="definsi">
+<h2>Definsi<a class="headerlink" href="#definsi" title="Link to this heading">#</a></h2>
+<p>Transformasi adalah pemetaan T dari ruang vektor V ke ruang vektor W .</p>
+<p><strong>v ∈ V Transformation −−−−−−−−→ w = T (v) ∈ W</strong></p>
+<p>Secara umum pemetaan T adalah transformasi linier jika</p>
+<div class="math notranslate nohighlight">
+\[ T( u+v) = T(u) + T(v) \]</div>
+<div class="math notranslate nohighlight">
+\[ T (\alpha v) = \alpha T (v) \]</div>
+<ul class="simple">
+<li><p>contoh:carilah matriks standar <span class="math notranslate nohighlight">\(A\)</span> linear transformation dari <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> to <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span> sehingga</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{gathered}
+T\left(\left[\begin{array}{l}
+1 \\
+0 \\
+0
+\end{array}\right]\right)=\left[\begin{array}{l}
+1 \\
+2
+\end{array}\right], T\left(\left[\begin{array}{l}
+0 \\
+1 \\
+0
+\end{array}\right]\right)=\left[\begin{array}{l}
+4 \\
+3
+\end{array}\right] \text {, and } T\left(\left[\begin{array}{l}
+0 \\
+0 \\
+1
+\end{array}\right]\right)=\left[\begin{array}{l}
+5 \\
+6
+\end{array}\right] . \\
+\mathbf{x}=\left[\begin{array}{l}
+x_1 \\
+x_2 \\
+x_3
+\end{array}\right]=x_1\left[\begin{array}{l}
+1 \\
+0 \\
+0
+\end{array}\right]+x_2\left[\begin{array}{l}
+0 \\
+1 \\
+0
+\end{array}\right]+x_3\left[\begin{array}{l}
+0 \\
+0 \\
+1
+\end{array}\right] \\
+T(\mathbf{x})=T\left(x_1\left[\begin{array}{l}
+1 \\
+0 \\
+0
+\end{array}\right]+x_2\left[\begin{array}{l}
+0 \\
+1 \\
+0
+\end{array}\right]+x_3\left[\begin{array}{l}
+0 \\
+0 \\
+1
+\end{array}\right]\right)=x_1 T\left(\left[\begin{array}{l}
+1 \\
+0 \\
+0
+\end{array}\right]\right)+x_2 T\left(\left[\begin{array}{l}
+0 \\
+1 \\
+0
+\end{array}\right]\right)+x_3 T\left(\left[\begin{array}{l}
+0 \\
+0 \\
+1
+\end{array}\right]\right) \\
+=x_1\left[\begin{array}{l}
+1 \\
+2
+\end{array}\right]+x_2\left[\begin{array}{l}
+4 \\
+3
+\end{array}\right]+x_2\left[\begin{array}{l}
+5 \\
+6
+\end{array}\right]=\left[\begin{array}{lll}
+1 &amp; 4 &amp; 5 \\
+2 &amp; 3 &amp; 6
+\end{array}\right]\left[\begin{array}{l}
+x_1 \\
+x_2 \\
+x_3
+\end{array}\right]=A \mathbf{x}
+\end{gathered}
+\end{split}\]</div>
+</section>
+<section id="refleksi">
+<h2>Refleksi<a class="headerlink" href="#refleksi" title="Link to this heading">#</a></h2>
+<p>Refleksi atau pencerminan selain terhadap garis vertikal atau garis horizontal, juga dapat dilakukan pencerminan terhadap garis yang lainnya yaitu terhdap garis <span class="math notranslate nohighlight">\(y=m x+c\)</span> atau terhadap garis <span class="math notranslate nohighlight">\(a x+b y+c=0\)</span>. Untuk pencerminan tipe ini, akan kita bahas pada artikel lainnya secara lebih mendalam. Silahkan teman-teman ikuti link: “Pencerminan terhadapgaris <span class="math notranslate nohighlight">\(y=m x+c\)</span> “.</p>
+<p>Berikut adalah matriks transformasi untuk refleksi berdasarkan garis sebagai cerminnya yaitu :
+). Pencerminan terhadap sumbu X
+$<span class="math notranslate nohighlight">\(
+A(a, b) \longrightarrow A^{\prime}(a,-b) \text {. }
+\)</span>$</p>
+<p>Matriksnya : <span class="math notranslate nohighlight">\(M=\left(\begin{array}{cc}1 &amp; 0 \\ 0 &amp; -1\end{array}\right)\)</span>
+enghitungan: <span class="math notranslate nohighlight">\(\binom{a^{\prime}}{b^{\prime}}=\left(\begin{array}{cc}1 &amp; 0 \\ 0 &amp; -1\end{array}\right)\binom{a}{b}\)</span>
+). Pencerminan terhadap sumbu <span class="math notranslate nohighlight">\(Y\)</span>
+$<span class="math notranslate nohighlight">\(
+A(a, b) \longrightarrow A^{\prime}(-a, b) \text {. }
+\)</span>$</p>
+<p>Matriksnya : <span class="math notranslate nohighlight">\(M=\left(\begin{array}{cc}-1 &amp; 0 \\ 0 &amp; 1\end{array}\right)\)</span>
+enghitungan : <span class="math notranslate nohighlight">\(\binom{a^{\prime}}{b^{\prime}}=\left(\begin{array}{cc}-1 &amp; 0 \\ 0 &amp; 1\end{array}\right)\binom{a}{b}\)</span>
+). Pencerminan terhadap garis <span class="math notranslate nohighlight">\(y=x\)</span>
+$<span class="math notranslate nohighlight">\(
+A(a, b) \longrightarrow A^{\prime}(b, a)
+\)</span>$</p>
+<p>Matriksnya : <span class="math notranslate nohighlight">\(M=\left(\begin{array}{ll}0 &amp; 1 \\ 1 &amp; 0\end{array}\right)\)</span>
+enghitungan: <span class="math notranslate nohighlight">\(\binom{a^{\prime}}{b^{\prime}}=\left(\begin{array}{ll}0 &amp; 1 \\ 1 &amp; 0\end{array}\right)\binom{a}{b}\)</span></p>
+<p>*). Pencerminan terhadap garis <span class="math notranslate nohighlight">\(y=-x\)</span>
+$<span class="math notranslate nohighlight">\(
+A(a, b) \longrightarrow A^{\prime}(-b,-a)
+\)</span>$</p>
+<p>Matriksnya : <span class="math notranslate nohighlight">\(M=\left(\begin{array}{cc}0 &amp; -1 \\ -1 &amp; 0\end{array}\right)\)</span>
+Penghitungan : <span class="math notranslate nohighlight">\(\binom{a^{\prime}}{b^{\prime}}=\left(\begin{array}{cc}0 &amp; -1 \\ -1 &amp; 0\end{array}\right)\binom{a}{b}\)</span>
+*). Pencerminan terhadap titik asal yaitu pusat koordinat <span class="math notranslate nohighlight">\((0,0)\)</span>
+$<span class="math notranslate nohighlight">\(
+A(a, b) \longrightarrow A^{\prime}(-a,-b)
+\)</span>$</p>
+<p>Matriksnya : <span class="math notranslate nohighlight">\(M=\left(\begin{array}{cc}-1 &amp; 0 \\ 0 &amp; -1\end{array}\right)\)</span>
+Penghitungan : <span class="math notranslate nohighlight">\(\binom{a^{\prime}}{b^{\prime}}=\left(\begin{array}{cc}-1 &amp; 0 \\ 0 &amp; -1\end{array}\right)\binom{a}{b}\)</span>
+*). Pencerminan terhadap garis <span class="math notranslate nohighlight">\(x=h\)</span>
+$<span class="math notranslate nohighlight">\(
+\begin{aligned}
+&amp; A(a, b) \\
+&amp; a^{\prime}=2 h-a A^{\prime}(2 h-a, b) \\
+&amp; b^{\prime}=b \rightarrow a^{\prime}=(-1 . a+0 . b)+2 h \\
+&amp;
+\end{aligned}
+\)</span>$</p>
+<p>Matriksnya : <span class="math notranslate nohighlight">\(M=\left(\begin{array}{cc}-1 &amp; 0 \\ 0 &amp; 1\end{array}\right)\)</span>
+Penghitungan : <span class="math notranslate nohighlight">\(\binom{a^{\prime}}{b^{\prime}}=\left(\begin{array}{cc}-1 &amp; 0 \\ 0 &amp; 1\end{array}\right)\binom{a}{b}+\binom{2 h}{0}\)</span>
+*). Pencerminan terhadap garis <span class="math notranslate nohighlight">\(y=k\)</span></p>
+<p>*). Pencerminan terhadap garis <span class="math notranslate nohighlight">\(y=k\)</span>
+$<span class="math notranslate nohighlight">\(
+\begin{aligned}
+&amp; A(a, b) \longrightarrow A^{\prime}(a, 2 k-b) . \\
+&amp; a^{\prime}=a \rightarrow a^{\prime}=(1 . a+0 . b)+0 \\
+&amp; b^{\prime}=2 k-b \rightarrow b^{\prime}=(0 . a+-1 . b)+2 k
+\end{aligned}
+\)</span>$</p>
+<p>Matriksnya : <span class="math notranslate nohighlight">\(M=\left(\begin{array}{cc}1 &amp; 0 \\ 0 &amp; -1\end{array}\right)\)</span>
+Penghitungan : <span class="math notranslate nohighlight">\(\binom{a^{\prime}}{b^{\prime}}=\left(\begin{array}{cc}1 &amp; 0 \\ 0 &amp; -1\end{array}\right)\binom{a}{b}+\binom{0}{2 k}\)</span></p>
+<p>Tranformasi Linier dengan Refleksi atau pencerminan pada tranformasi linear adalah adalah salah satu metode tranformasi linear yang digunakan untuk mencerminkan suatu Node dengan fungsi matrix. Berikut adalah sifat-sifat Refleksi:</p>
+<ol class="arabic simple">
+<li><p>Objek yang direfleksikan tidak mengalami perubahan benntuk dan ukuran</p></li>
+<li><p>Jarak objek dari cermin (sumbu X/Y) adalah sama dengan jarak bayangan dengan cermin tersbut.</p></li>
+</ol>
+<p>Contoh :</p>
+<p>Misalkan refleksi dari titik A(1,1)dan bentuk matriksnya yaitu :</p>
+<p><span class="math notranslate nohighlight">\( A  \begin{pmatrix}
+1 &amp; 2 \\
+2 &amp; 1 \\
+\end{pmatrix} \)</span></p>
 </section>
 </section>
 
@@ -459,7 +632,8 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">Pengertian :</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#secara-umum-pemetaan-adalah-transformasi-linier-jika">Secara umum pemetaan adalah transformasi Linier jika</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definsi">Definsi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi">Refleksi</a></li>
 </ul>
   </nav></div>
 
