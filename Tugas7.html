@@ -62,7 +62,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Tugas7';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Eigen Value &amp; Eigen Vector" href="Tugas6.html" />
+    <link rel="next" title="Pengertian :" href="Tugas8.html" />
+    <link rel="prev" title="EIGEN VALUE &amp; EIGEN VECTOR" href="Tugas6.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -185,8 +186,10 @@
 
 <li class="toctree-l1"><a class="reference internal" href="Tugas4.html">SOAL UTS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugas5.html">DETERMINAN</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tugas6.html">Eigen Value &amp; Eigen Vector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tugas6.html">EIGEN VALUE &amp; EIGEN VECTOR</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">TRANSFORMASI LINIER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tugas8.html"><strong>Pengertian</strong> :</a></li>
+
 </ul>
 
     </div>
@@ -382,9 +385,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">Pengertian :</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definsi">Definsi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi">Refleksi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-transformasi">Definisi Transformasi</a></li>
 </ul>
             </nav>
         </div>
@@ -398,181 +399,149 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="transformasi-linier">
 <h1>TRANSFORMASI LINIER<a class="headerlink" href="#transformasi-linier" title="Link to this heading">#</a></h1>
-<section id="pengertian">
-<h2>Pengertian :<a class="headerlink" href="#pengertian" title="Link to this heading">#</a></h2>
-<p>Transformasi adalah pemetaan T dari ruang vektor V ke ruang vektor W.</p>
-<p>Cara menentukan tranformasi linier :</p>
+<section id="definisi-transformasi">
+<h2>Definisi Transformasi<a class="headerlink" href="#definisi-transformasi" title="Link to this heading">#</a></h2>
+<p>Fungsi f dari himpunan X ke himpunan Y terdapat aturan yang menetapkan setiap elemen Y ke setiap elemen X. Misalkan himpunan X dan Y keduanya merupakan himpunan semua vektor dalam ruang, dapat menyatakan sebagai suatu transformasi.</p>
+<p>Transformasi Linier</p>
 <ul class="simple">
-<li><p>pusat titik tidak berubah</p></li>
-<li><p>garis lurus ditetapkan sebagai lurus</p></li>
+<li><p>Transformasi <span class="math notranslate nohighlight">\(=\)</span> fungsi <span class="math notranslate nohighlight">\(=\)</span> pemetaan (mapping)</p></li>
 </ul>
-</section>
-<section id="definsi">
-<h2>Definsi<a class="headerlink" href="#definsi" title="Link to this heading">#</a></h2>
-<p>Transformasi adalah pemetaan T dari ruang vektor V ke ruang vektor W .</p>
-<p><strong>v ∈ V Transformation −−−−−−−−→ w = T (v) ∈ W</strong></p>
-<p>Secara umum pemetaan T adalah transformasi linier jika</p>
-<div class="math notranslate nohighlight">
-\[ T( u+v) = T(u) + T(v) \]</div>
-<div class="math notranslate nohighlight">
-\[ T (\alpha v) = \alpha T (v) \]</div>
+<p>Misalkan V dan W adalah ruang vektor. Transformasi yang memetakan ruang vektor <span class="math notranslate nohighlight">\(\vee\)</span> ke ruang vektor <span class="math notranslate nohighlight">\(\mathrm{W}\)</span> ditulis sebagai
+$<span class="math notranslate nohighlight">\(
+\mathrm{T}: \mathrm{V} \rightarrow \mathrm{W}
+\)</span><span class="math notranslate nohighlight">\(
+V adalah daerah asal (domain) transformasi T dan W adalah daerah hasil transformasi (kodomain) fungsi. Jika \)</span>\mathrm{V}=\mathrm{W}<span class="math notranslate nohighlight">\(, maka \)</span>\mathrm{T}$ dinamakan operator pada V.</p>
 <ul class="simple">
-<li><p>contoh:carilah matriks standar <span class="math notranslate nohighlight">\(A\)</span> linear transformation dari <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> to <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span> sehingga</p></li>
+<li><p>Jika <span class="math notranslate nohighlight">\(\mathbf{v} \in \mathrm{V}\)</span> dan <span class="math notranslate nohighlight">\(\mathbf{w} \in \mathrm{W}\)</span>, maka
+$<span class="math notranslate nohighlight">\(
+\mathbf{w}=\mathrm{T}(\mathbf{v})
+\)</span>$</p></li>
 </ul>
+<p>Misalkan <span class="math notranslate nohighlight">\(\mathrm{T}: \mathrm{R}^3 \rightarrow \mathrm{R}^3\)</span> didefinisikan sebagai berikut:
+$<span class="math notranslate nohighlight">\(
+T\left(\left[\begin{array}{l}
+x_1 \\
+x_2 \\
+x_3
+\end{array}\right]\right)=\left[\begin{array}{c}
+x_1+2 x_2+x_3 \\
+x_1+5 x_2 \\
+x_3
+\end{array}\right]
+\)</span>$</p>
+<p>Tentukan bayangan vektor <span class="math notranslate nohighlight">\(\mathbf{v}=(3,2,0)\)</span>.
+Jawaban:
+$<span class="math notranslate nohighlight">\(
+T\left(\left[\begin{array}{l}
+3 \\
+2 \\
+0
+\end{array}\right]\right)=\left[\begin{array}{c}
+3+2(2)+0 \\
+3+5(2) \\
+0
+\end{array}\right]=\left[\begin{array}{c}
+7 \\
+13 \\
+0
+\end{array}\right]
+\)</span>$</p>
+<p>Jadi, bayangan vektor <span class="math notranslate nohighlight">\((3,2,0)\)</span> adalah <span class="math notranslate nohighlight">\((7,13,0)\)</span>.</p>
+<p>Diberikan fungsi <span class="math notranslate nohighlight">\(T: R^2 \rightarrow R^2\)</span> yang dalam hal ini <span class="math notranslate nohighlight">\(T(x, y)=(2 x, y)\)</span>, maka akan ditunjukkan bahwa T adalah transformasi linier.
+Misalkan <span class="math notranslate nohighlight">\(\mathbf{u}\)</span> dan <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> adalah dua buah vektor di <span class="math notranslate nohighlight">\(\mathrm{R}^2, \mathbf{u}=\left(\mathbf{u}_1, \mathrm{u}_2\right)\)</span> dan <span class="math notranslate nohighlight">\(\mathbf{v}=\left(\mathrm{v}_1, \mathbf{v}_2\right)\)</span>.<br />
+(1)
+$<span class="math notranslate nohighlight">\(
+\begin{aligned}
+T(\mathbf{u}+\mathbf{v}) &amp; =\mathrm{T}\left(u_1+v_1, u_2+v_2\right)=\left(2\left(u_1+v_1\right), u_2+v_2\right)=\left(2 u_1+2 v_1, u_2+v_2\right) \\
+&amp; =\left[\begin{array}{c}
+2 u_1+2 v_1 \\
+u_2+v_2
+\end{array}\right]=\left[\begin{array}{c}
+2 u_1 \\
+u_2
+\end{array}\right]+\left[\begin{array}{c}
+2 v_1 \\
+v_2
+\end{array}\right]=T(u)+T(\mathbf{v})
+\end{aligned}
+\)</span><span class="math notranslate nohighlight">\(
+(2)
+\)</span><span class="math notranslate nohighlight">\(
+\begin{aligned}
+&amp; \mathrm{T}(k \mathbf{u})=\mathrm{T}\left(k u_1, k u_2\right)=\left(2 k u_1, k u_2\right) \\
+&amp;=\left[\begin{array}{c}
+2 k u_1 \\
+k u_2
+\end{array}\right]=k\left[\begin{array}{c}
+2 u_1 \\
+u_2
+\end{array}\right]=k \mathrm{~T}(\mathbf{u})
+\end{aligned}
+\)</span>$</p>
+<p>Karena <span class="math notranslate nohighlight">\(T(\mathbf{u}+\mathbf{v})=\mathrm{T}(\mathbf{u})+\mathrm{T}(\mathbf{v})\)</span> dan <span class="math notranslate nohighlight">\(\mathrm{T}(k \mathbf{u})=k T(\mathbf{u})\)</span>, maka <span class="math notranslate nohighlight">\(T\)</span> adalah transformasi linier</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Definisikan fungsi transformasi T</span>
+<span class="k">def</span> <span class="nf">T</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+    <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">v</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span> <span class="o">*</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">])</span>
+
+<span class="c1"># Misalkan dua vektor u dan v</span>
+<span class="n">u</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+<span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+
+<span class="c1"># Misalkan sebuah skalar k</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mi">3</span>  <span class="c1"># Anda bisa mengganti nilai k sesuai kebutuhan</span>
+
+<span class="c1"># Verifikasi bahwa T(u + v) = T(u) + T(v)</span>
+<span class="n">u_plus_v</span> <span class="o">=</span> <span class="n">u</span> <span class="o">+</span> <span class="n">v</span>
+<span class="n">T_u_plus_v</span> <span class="o">=</span> <span class="n">T</span><span class="p">(</span><span class="n">u_plus_v</span><span class="p">)</span>
+<span class="n">T_u</span> <span class="o">=</span> <span class="n">T</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
+<span class="n">T_v</span> <span class="o">=</span> <span class="n">T</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+<span class="n">T_u_plus_T_v</span> <span class="o">=</span> <span class="n">T_u</span> <span class="o">+</span> <span class="n">T_v</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;T(u + v):&quot;</span><span class="p">,</span> <span class="n">T_u_plus_v</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;T(u) + T(v):&quot;</span><span class="p">,</span> <span class="n">T_u_plus_T_v</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Apakah T(u + v) = T(u) + T(v)?&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">T_u_plus_v</span><span class="p">,</span> <span class="n">T_u_plus_T_v</span><span class="p">))</span>
+
+<span class="c1"># Verifikasi bahwa T(k * u) = k * T(u)</span>
+<span class="n">k_u</span> <span class="o">=</span> <span class="n">k</span> <span class="o">*</span> <span class="n">u</span>
+<span class="n">T_k_u</span> <span class="o">=</span> <span class="n">T</span><span class="p">(</span><span class="n">k_u</span><span class="p">)</span>
+<span class="n">k_T_u</span> <span class="o">=</span> <span class="n">k</span> <span class="o">*</span> <span class="n">T_u</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;T(k * u):&quot;</span><span class="p">,</span> <span class="n">T_k_u</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;k * T(u):&quot;</span><span class="p">,</span> <span class="n">k_T_u</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Apakah T(k * u) = k * T(u)?&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">T_k_u</span><span class="p">,</span> <span class="n">k_T_u</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>T(u + v): [6 5]
+T(u) + T(v): [6 5]
+Apakah T(u + v) = T(u) + T(v)? True
+T(k * u): [6 6]
+k * T(u): [6 6]
+Apakah T(k * u) = k * T(u)? True
+</pre></div>
+</div>
+</div>
+</div>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\begin{gathered}
 T\left(\left[\begin{array}{l}
 1 \\
 0 \\
+\end{array}
+\right]\right)=XT \left[\begin{array}{c}
+2 \\
 0
-\end{array}\right]\right)=\left[\begin{array}{l}
-1 \\
-2
-\end{array}\right], T\left(\left[\begin{array}{l}
-0 \\
-1 \\
-0
-\end{array}\right]\right)=\left[\begin{array}{l}
-4 \\
-3
-\end{array}\right] \text {, and } T\left(\left[\begin{array}{l}
-0 \\
-0 \\
-1
-\end{array}\right]\right)=\left[\begin{array}{l}
-5 \\
-6
-\end{array}\right] . \\
-\mathbf{x}=\left[\begin{array}{l}
-x_1 \\
-x_2 \\
-x_3
-\end{array}\right]=x_1\left[\begin{array}{l}
-1 \\
-0 \\
-0
-\end{array}\right]+x_2\left[\begin{array}{l}
-0 \\
-1 \\
-0
-\end{array}\right]+x_3\left[\begin{array}{l}
-0 \\
-0 \\
-1
-\end{array}\right] \\
-T(\mathbf{x})=T\left(x_1\left[\begin{array}{l}
-1 \\
-0 \\
-0
-\end{array}\right]+x_2\left[\begin{array}{l}
-0 \\
-1 \\
-0
-\end{array}\right]+x_3\left[\begin{array}{l}
-0 \\
-0 \\
-1
-\end{array}\right]\right)=x_1 T\left(\left[\begin{array}{l}
-1 \\
-0 \\
-0
-\end{array}\right]\right)+x_2 T\left(\left[\begin{array}{l}
-0 \\
-1 \\
-0
-\end{array}\right]\right)+x_3 T\left(\left[\begin{array}{l}
-0 \\
-0 \\
-1
-\end{array}\right]\right) \\
-=x_1\left[\begin{array}{l}
-1 \\
-2
-\end{array}\right]+x_2\left[\begin{array}{l}
-4 \\
-3
-\end{array}\right]+x_2\left[\begin{array}{l}
-5 \\
-6
-\end{array}\right]=\left[\begin{array}{lll}
-1 &amp; 4 &amp; 5 \\
-2 &amp; 3 &amp; 6
-\end{array}\right]\left[\begin{array}{l}
-x_1 \\
-x_2 \\
-x_3
-\end{array}\right]=A \mathbf{x}
-\end{gathered}
+\end{array}\right]+YT\left[\begin{array}{c}
+2 \\
+2 \\
+\end{array}\right]
 \end{split}\]</div>
-</section>
-<section id="refleksi">
-<h2>Refleksi<a class="headerlink" href="#refleksi" title="Link to this heading">#</a></h2>
-<p>Refleksi atau pencerminan selain terhadap garis vertikal atau garis horizontal, juga dapat dilakukan pencerminan terhadap garis yang lainnya yaitu terhdap garis <span class="math notranslate nohighlight">\(y=m x+c\)</span> atau terhadap garis <span class="math notranslate nohighlight">\(a x+b y+c=0\)</span>. Untuk pencerminan tipe ini, akan kita bahas pada artikel lainnya secara lebih mendalam. Silahkan teman-teman ikuti link: “Pencerminan terhadapgaris <span class="math notranslate nohighlight">\(y=m x+c\)</span> “.</p>
-<p>Berikut adalah matriks transformasi untuk refleksi berdasarkan garis sebagai cerminnya yaitu :
-). Pencerminan terhadap sumbu X
-$<span class="math notranslate nohighlight">\(
-A(a, b) \longrightarrow A^{\prime}(a,-b) \text {. }
-\)</span>$</p>
-<p>Matriksnya : <span class="math notranslate nohighlight">\(M=\left(\begin{array}{cc}1 &amp; 0 \\ 0 &amp; -1\end{array}\right)\)</span>
-enghitungan: <span class="math notranslate nohighlight">\(\binom{a^{\prime}}{b^{\prime}}=\left(\begin{array}{cc}1 &amp; 0 \\ 0 &amp; -1\end{array}\right)\binom{a}{b}\)</span>
-). Pencerminan terhadap sumbu <span class="math notranslate nohighlight">\(Y\)</span>
-$<span class="math notranslate nohighlight">\(
-A(a, b) \longrightarrow A^{\prime}(-a, b) \text {. }
-\)</span>$</p>
-<p>Matriksnya : <span class="math notranslate nohighlight">\(M=\left(\begin{array}{cc}-1 &amp; 0 \\ 0 &amp; 1\end{array}\right)\)</span>
-enghitungan : <span class="math notranslate nohighlight">\(\binom{a^{\prime}}{b^{\prime}}=\left(\begin{array}{cc}-1 &amp; 0 \\ 0 &amp; 1\end{array}\right)\binom{a}{b}\)</span>
-). Pencerminan terhadap garis <span class="math notranslate nohighlight">\(y=x\)</span>
-$<span class="math notranslate nohighlight">\(
-A(a, b) \longrightarrow A^{\prime}(b, a)
-\)</span>$</p>
-<p>Matriksnya : <span class="math notranslate nohighlight">\(M=\left(\begin{array}{ll}0 &amp; 1 \\ 1 &amp; 0\end{array}\right)\)</span>
-enghitungan: <span class="math notranslate nohighlight">\(\binom{a^{\prime}}{b^{\prime}}=\left(\begin{array}{ll}0 &amp; 1 \\ 1 &amp; 0\end{array}\right)\binom{a}{b}\)</span></p>
-<p>*). Pencerminan terhadap garis <span class="math notranslate nohighlight">\(y=-x\)</span>
-$<span class="math notranslate nohighlight">\(
-A(a, b) \longrightarrow A^{\prime}(-b,-a)
-\)</span>$</p>
-<p>Matriksnya : <span class="math notranslate nohighlight">\(M=\left(\begin{array}{cc}0 &amp; -1 \\ -1 &amp; 0\end{array}\right)\)</span>
-Penghitungan : <span class="math notranslate nohighlight">\(\binom{a^{\prime}}{b^{\prime}}=\left(\begin{array}{cc}0 &amp; -1 \\ -1 &amp; 0\end{array}\right)\binom{a}{b}\)</span>
-*). Pencerminan terhadap titik asal yaitu pusat koordinat <span class="math notranslate nohighlight">\((0,0)\)</span>
-$<span class="math notranslate nohighlight">\(
-A(a, b) \longrightarrow A^{\prime}(-a,-b)
-\)</span>$</p>
-<p>Matriksnya : <span class="math notranslate nohighlight">\(M=\left(\begin{array}{cc}-1 &amp; 0 \\ 0 &amp; -1\end{array}\right)\)</span>
-Penghitungan : <span class="math notranslate nohighlight">\(\binom{a^{\prime}}{b^{\prime}}=\left(\begin{array}{cc}-1 &amp; 0 \\ 0 &amp; -1\end{array}\right)\binom{a}{b}\)</span>
-*). Pencerminan terhadap garis <span class="math notranslate nohighlight">\(x=h\)</span>
-$<span class="math notranslate nohighlight">\(
-\begin{aligned}
-&amp; A(a, b) \\
-&amp; a^{\prime}=2 h-a A^{\prime}(2 h-a, b) \\
-&amp; b^{\prime}=b \rightarrow a^{\prime}=(-1 . a+0 . b)+2 h \\
-&amp;
-\end{aligned}
-\)</span>$</p>
-<p>Matriksnya : <span class="math notranslate nohighlight">\(M=\left(\begin{array}{cc}-1 &amp; 0 \\ 0 &amp; 1\end{array}\right)\)</span>
-Penghitungan : <span class="math notranslate nohighlight">\(\binom{a^{\prime}}{b^{\prime}}=\left(\begin{array}{cc}-1 &amp; 0 \\ 0 &amp; 1\end{array}\right)\binom{a}{b}+\binom{2 h}{0}\)</span>
-*). Pencerminan terhadap garis <span class="math notranslate nohighlight">\(y=k\)</span></p>
-<p>*). Pencerminan terhadap garis <span class="math notranslate nohighlight">\(y=k\)</span>
-$<span class="math notranslate nohighlight">\(
-\begin{aligned}
-&amp; A(a, b) \longrightarrow A^{\prime}(a, 2 k-b) . \\
-&amp; a^{\prime}=a \rightarrow a^{\prime}=(1 . a+0 . b)+0 \\
-&amp; b^{\prime}=2 k-b \rightarrow b^{\prime}=(0 . a+-1 . b)+2 k
-\end{aligned}
-\)</span>$</p>
-<p>Matriksnya : <span class="math notranslate nohighlight">\(M=\left(\begin{array}{cc}1 &amp; 0 \\ 0 &amp; -1\end{array}\right)\)</span>
-Penghitungan : <span class="math notranslate nohighlight">\(\binom{a^{\prime}}{b^{\prime}}=\left(\begin{array}{cc}1 &amp; 0 \\ 0 &amp; -1\end{array}\right)\binom{a}{b}+\binom{0}{2 k}\)</span></p>
-<p>Tranformasi Linier dengan Refleksi atau pencerminan pada tranformasi linear adalah adalah salah satu metode tranformasi linear yang digunakan untuk mencerminkan suatu Node dengan fungsi matrix. Berikut adalah sifat-sifat Refleksi:</p>
-<ol class="arabic simple">
-<li><p>Objek yang direfleksikan tidak mengalami perubahan benntuk dan ukuran</p></li>
-<li><p>Jarak objek dari cermin (sumbu X/Y) adalah sama dengan jarak bayangan dengan cermin tersbut.</p></li>
-</ol>
-<p>Contoh :</p>
-<p>Misalkan refleksi dari titik A(1,1)dan bentuk matriksnya yaitu :</p>
-<p><span class="math notranslate nohighlight">\( A  \begin{pmatrix}
-1 &amp; 2 \\
-2 &amp; 1 \\
-\end{pmatrix} \)</span></p>
 </section>
 </section>
 
@@ -612,8 +581,17 @@ Penghitungan : <span class="math notranslate nohighlight">\(\binom{a^{\prime}}{b
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Eigen Value &amp; Eigen Vector</p>
+        <p class="prev-next-title">EIGEN VALUE &amp; EIGEN VECTOR</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="Tugas8.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>Pengertian</strong> :</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -631,9 +609,7 @@ Penghitungan : <span class="math notranslate nohighlight">\(\binom{a^{\prime}}{b
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">Pengertian :</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definsi">Definsi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi">Refleksi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-transformasi">Definisi Transformasi</a></li>
 </ul>
   </nav></div>
 
